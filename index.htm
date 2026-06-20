@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Shogi Copper - Game</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="./pgm01.js">  </script>
+</head>
+<body>
+
+  <div id="clockContainer" style="margin-bottom:16px; display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap;">
+    <div style="padding:10px; border:1px solid #555; width:180px; background:#f7f7f7;">
+      <strong>White</strong>
+      <div id="whiteTime" style="font-size:24px; margin-top:8px;">30:00</div>
+      <div id="whiteByo" style="font-size:14px; color:#333; margin-top:4px;">Byo: 30</div>
+    </div>
+    <div style="padding:10px; border:1px solid #555; width:180px; background:#f7f7f7;">
+      <strong>Black</strong>
+      <div id="blackTime" style="font-size:24px; margin-top:8px;">30:00</div>
+      <div id="blackByo" style="font-size:14px; color:#333; margin-top:4px;">Byo: 30</div>
+    </div>
+    <div style="padding:10px; border:1px solid #555; width:180px; background:#f7f7f7;">
+      <strong>Clock status</strong>
+      <div id="clockStatus" style="font-size:14px; margin-top:8px;">Ready</div>
+      <button id="resetClockButton" type="button" style="margin-top:10px;">Reset Clock</button>
+    </div>
+  </div>
+  
+  <p></p>
+
+  <table>
+      <tr>
+      <td><div id="output"></div></td>
+      <td>
+        <div id="MovesMade">
+          <textarea id="movesText" rows="10" cols="30" readonly placeholder="Chess moves will appear here"></textarea>
+          <div><button id="takeBackButton" type="button">Take Back</button></div>
+          <div><button id="stopButton" type="button">Stop Clock</button></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+  <p></p>
+
+  <div id="boardContainer" style="margin-bottom:16px; display:flex; align-items:flex-start; flex-wrap:wrap;">
+  </div>
+  
+</body>
+</html>
